@@ -1,4 +1,10 @@
 <resources>
+    <!-- Application Name -->
     <string name="app_name">Quiz App</string>
-    <string name="title">Can you hit the right answers from this quiz?</string>
+
+    <!-- Main Title -->
+    <string name="title">Do you know the capital cities of these countries?</string>
+
+    <!-- First Question -->
+    <string name="first_question">What is the capital of Poland?</string>
 </resources>
