@@ -6,9 +6,24 @@
     <string name="title">Do you know the capital cities of these countries?</string>
 
     <!-- First Question -->
-    <string name="first_question">What is the capital of Poland?</string>
+    <string name="first_question">What is the capital of Romania?</string>
 
-    <string name="first_answer">Bucharest</string>
-    <string name="second_answer">Warsaw</string>
+    <!-- First answer for first question -->
+    <string name="first_answer">Warsaw</string>
+
+    <!-- Second answer for first question -->
+    <string name="second_answer">Bucharest</string>
+
+    <!-- Third answer for first question -->
     <string name="third_answer">Paris</string>
+
+    <!-- Result button -->
+    <string name="result">Result</string>
+
+    <!-- Answers button -->
+    <string name="answers">Answers</string>
+
+    <!-- Reset button -->
+    <string name="reset">Reset</string>
+
 </resources>
