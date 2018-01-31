@@ -7,4 +7,8 @@
 
     <!-- First Question -->
     <string name="first_question">What is the capital of Poland?</string>
+
+    <string name="first_answer">Bucharest</string>
+    <string name="second_answer">Warsaw</string>
+    <string name="third_answer">Paris</string>
 </resources>

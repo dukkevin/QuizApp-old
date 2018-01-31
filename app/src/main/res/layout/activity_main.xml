@@ -37,13 +37,54 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:layout_marginTop="30dp">
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/first_question"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:textSize="17dp"/>
+
+                <RadioGroup
+                    android:id="@+id/first_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/first_answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="Bucharest" />
+
+                    <RadioButton
+                        android:id="@+id/second_answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="Paris" />
+
+                    <RadioButton
+                        android:id="@+id/third_answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="Warsaw" />
+
+                </RadioGroup>
 
             </LinearLayout>
 
