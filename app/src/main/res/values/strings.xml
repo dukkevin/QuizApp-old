@@ -23,6 +23,12 @@
     <!-- Sixth Question -->
     <string name="sixth_question">What is the capital of Finland?</string>
 
+    <!-- Title of Bonus Question -->
+    <string name="title_bonus_question">Bonus Question!</string>
+
+    <!-- Bonus Question -->
+    <string name="bonus_question">The first two populated countrys from Europe?</string>
+
     <!-- First answer for first question -->
     <string name="first_answer">Warsaw</string>
 
@@ -40,6 +46,9 @@
 
     <!-- First answer for sixth question -->
     <string name="first_answer_ssq">Helsinki</string>
+
+    <!-- First answer for bonus question -->
+    <string name="first_answer_bonus_q">Ukraine</string>
 
     <!-- Second answer for first question -->
     <string name="second_answer">Bucharest</string>
@@ -59,6 +68,9 @@
     <!-- Second answer for sixth question -->
     <string name="second_answer_ssq">Bern</string>
 
+    <!-- Second answer for bonus question -->
+    <string name="second_answer_bonus_q">Iceland</string>
+
     <!-- Third answer for first question -->
     <string name="third_answer">Paris</string>
 
@@ -76,6 +88,9 @@
 
     <!-- Third answer for sixth question -->
     <string name="third_answer_ssq">London</string>
+
+    <!-- Third answer for bonus question -->
+    <string name="third_answer_bonus_q">France</string>
 
     <!-- Result button -->
     <string name="result">Result</string>
