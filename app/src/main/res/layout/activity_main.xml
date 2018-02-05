@@ -7,7 +7,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,106 +25,226 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/title"
-                    android:textSize="16sp"
+                    android:background="@android:color/darker_gray"
                     android:padding="8dp"
-                    android:background="@android:color/darker_gray" />
-                    <!-- TODO Chose the right color -->
+                    android:text="@string/title"
+                    android:textSize="16sp" />
+
             </LinearLayout>
 
-            <!-- First Question -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
                 android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/first_question"
-                    android:textStyle="bold"
-                    android:textSize="17sp"/>
-
-                <RadioGroup
-                    android:id="@+id/first_radio_group"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp">
-
-                    <RadioButton
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:button="@null"
-                        android:drawableTop="?android:attr/listChoiceIndicatorSingle"
-                        android:gravity="center_horizontal|bottom"
-                        android:text="@string/first_answer" />
-
-                    <RadioButton
-                        android:id="@+id/correct_first_answer"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:button="@null"
-                        android:drawableTop="?android:attr/listChoiceIndicatorSingle"
-                        android:gravity="center_horizontal|bottom"
-                        android:text="@string/second_answer" />
-
-                    <RadioButton
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:button="@null"
-                        android:drawableTop="?android:attr/listChoiceIndicatorSingle"
-                        android:gravity="center_horizontal|bottom"
-                        android:text="@string/third_answer" />
-
-                </RadioGroup>
-
+                <!-- First Question -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="50dp">
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
 
-                    <Button
-                        android:layout_width="0dp"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="displayResults"
-                        android:text="@string/result"
-                        android:textSize="16sp" />
+                        android:text="@string/first_question"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
 
-                    <Button
-                        android:id="@+id/show_good_answers"
-                        android:layout_width="0dp"
+                    <!-- Question Options -->
+                    <RadioGroup
+                        android:id="@+id/first_radio_group"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_weight="1"
-                        android:onClick="showGoodAnswers"
-                        android:text="@string/answers"
-                        android:textSize="16sp" />
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/reset"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="resetButton"
-                        android:text="@string/reset"
-                        android:textSize="16sp" />
-                    <!-- TODO Fix button errors -->
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/first_answer" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/second_answer" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/third_answer" />
+
+                    </RadioGroup>
 
                 </LinearLayout>
+
+                <!-- Second Question -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/second_question"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <!-- Question Options -->
+                    <RadioGroup
+                        android:id="@+id/second_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/first_answer_sq" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/second_answer_sq" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/third_answer_sq" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <!-- Third Question -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/third_question"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <!-- Question Options -->
+                    <RadioGroup
+                        android:id="@+id/third_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/first_answer_tq" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/second_answer_tq" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/third_answer_tq" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/result"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/show_good_answers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:onClick="showGoodAnswers"
+                    android:text="@string/answers"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="resetButton"
+                    android:text="@string/reset"
+                    android:textSize="16sp" />
+
             </LinearLayout>
 
         </LinearLayout>
-
-
-
     </ScrollView>
+
 </android.support.constraint.ConstraintLayout>
