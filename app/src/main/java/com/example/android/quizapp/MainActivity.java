@@ -4,8 +4,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,9 +32,59 @@ public class MainActivity extends AppCompatActivity {
         firstCheckBox = (CheckBox) findViewById(R.id.first_checkbox);
         secondCheckBox = (CheckBox) findViewById(R.id.second_checkbox);
         thirdCheckBox = (CheckBox) findViewById(R.id.third_checkbox);
-
+        editText = (EditText) findViewById(R.id. first_edit_text);
     }
 
+    public void displayResults (View view) {
+        int point = 0;
+
+        boolean toCheckOne = firstRadioButton.isChecked();
+        if (toCheckOne) {
+            point++;
+        }
+
+        boolean toCheckTwo = secondRadioButton.isChecked();
+        if (toCheckTwo) {
+            point++;
+        }
+
+        boolean toCheckThree = thirdRadioButton.isChecked();
+        if (toCheckThree) {
+            point++;
+        }
+
+        boolean toCheckFour = fourthRadioButton.isChecked();
+        if (toCheckFour) {
+            point++;
+        }
+
+        boolean toCheckFive = fifthRadioButton.isChecked();
+        if (toCheckFive) {
+            point++;
+        }
+
+        boolean toCheckSix = sixthRadioButton.isChecked();
+        if (toCheckSix) {
+            point++;
+        }
+
+        String toCheckSeven = editText.getText().toString();
+        String answer = "195";
+        if (toCheckSeven.equals(answer)){
+            point++;
+        }
+
+        boolean toCheckFirstCheckBox = firstCheckBox.isChecked();
+        boolean toCheckSecondCheckBox = secondCheckBox.isChecked();
+        boolean toCheckThirdCheckBox = thirdCheckBox.isChecked();
+
+        if ((toCheckFirstCheckBox && toCheckThirdCheckBox) &&
+                (toCheckSecondCheckBox==false)) {
+            point++;
+        }
+
+        Toast.makeText(this, "You get " + point + " on 8", Toast.LENGTH_LONG).show();
+    }
 
     private RadioGroup firstRadioGroup;
     private RadioGroup secondRadioGroup;
@@ -48,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton fourthRadioButton;
     private RadioButton fifthRadioButton;
     private RadioButton sixthRadioButton;
+    private EditText editText;
+
 
     /**
      * Reset all answers
@@ -63,6 +118,8 @@ public class MainActivity extends AppCompatActivity {
         firstCheckBox.setChecked(false);
         secondCheckBox.setChecked(false);
         thirdCheckBox.setChecked(false);
+        editText.getText().clear();
+
     }
 
     /**
@@ -82,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
         sixthRadioButton.setChecked(true);
         firstCheckBox.setChecked(true);
         thirdCheckBox.setChecked(true);
+        editText.setText("195");
     }
 }
 

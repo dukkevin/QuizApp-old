@@ -26,8 +26,14 @@
     <!-- Title of Bonus Question -->
     <string name="title_bonus_question">Bonus Question!</string>
 
+    <!-- Title of Extra Bonus Question -->
+    <string name="title_extra_bonus_question">Extra Bonus Question! :)</string>
+
     <!-- Bonus Question -->
     <string name="bonus_question">The first two populated countrys from Europe?</string>
+
+    <!-- Extra Bonus Question -->
+    <string name="extra_bonus_question">Number of countries in the world?</string>
 
     <!-- First answer for first question -->
     <string name="first_answer">Warsaw</string>
@@ -100,5 +106,8 @@
 
     <!-- Reset button -->
     <string name="reset">Reset</string>
+
+    <!-- Extra hint field -->
+    <string name="hint_extra">Type the number of total countries...</string>
 
 </resources>

@@ -416,6 +416,39 @@
 
             </LinearLayout>
 
+            <!-- Extra Bonus Question -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_extra_bonus_question"
+                    android:textAllCaps="true"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/extra_bonus_question"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/first_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_extra"
+                    android:textSize="15dp"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
             <!-- Buttons -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -424,6 +457,7 @@
                 android:layout_marginTop="50dp">
 
                 <Button
+                    android:onClick="displayResults"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
