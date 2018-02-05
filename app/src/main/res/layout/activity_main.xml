@@ -200,6 +200,168 @@
 
                 </LinearLayout>
 
+                <!-- Fourth Question -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fourth_question"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <!-- Question Options -->
+                    <RadioGroup
+                        android:id="@+id/fourth_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/first_answer_fq" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/second_answer_fq" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/third_answer_fq" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <!-- Fifth Question -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fifth_question"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <!-- Question Options -->
+                    <RadioGroup
+                        android:id="@+id/fifth_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/first_answer_ffq" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/second_answer_ffq" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/third_answer_ffq" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <!-- Sixth Question -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sixth_question"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <!-- Question Options -->
+                    <RadioGroup
+                        android:id="@+id/sixth_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/first_answer_ssq" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/second_answer_ssq" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="?android:attr/listChoiceIndicatorSingle"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="@string/third_answer_ssq" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
 
 
 

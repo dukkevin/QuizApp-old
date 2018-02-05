@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
         firstRadioGroup = (RadioGroup) findViewById(R.id.first_radio_group);
         secondRadioGroup = (RadioGroup) findViewById(R.id.second_radio_group);
         thirdRadioGroup = (RadioGroup) findViewById(R.id.third_radio_group);
+        fourthRadioGroup = (RadioGroup) findViewById(R.id.fourth_radio_group);
+        fifthRadioGroup = (RadioGroup) findViewById(R.id.fifth_radio_group);
+        sixthRadioGroup = (RadioGroup) findViewById(R.id.sixth_radio_group);
 
     }
 
@@ -23,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup firstRadioGroup;
     private RadioGroup secondRadioGroup;
     private RadioGroup thirdRadioGroup;
+    private RadioGroup fourthRadioGroup;
+    private RadioGroup fifthRadioGroup;
+    private RadioGroup sixthRadioGroup;
     private RadioButton firstRadioButton;
 
     /**
@@ -33,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         firstRadioGroup.clearCheck();
         secondRadioGroup.clearCheck();
         thirdRadioGroup.clearCheck();
+        fourthRadioGroup.clearCheck();
+        fifthRadioGroup.clearCheck();
+        sixthRadioGroup.clearCheck();
     }
 
     /**
