@@ -17,6 +17,12 @@ public class MainActivity extends AppCompatActivity {
         firstRadioGroup = (RadioGroup) findViewById(R.id.first_radio_group);
         secondRadioGroup = (RadioGroup) findViewById(R.id.second_radio_group);
         thirdRadioGroup = (RadioGroup) findViewById(R.id.third_radio_group);
+        firstRadioButton = (RadioButton) findViewById(R.id.first_correct);
+        secondRadioButton = (RadioButton) findViewById(R.id.second_correct);
+        thirdRadioButton = (RadioButton) findViewById(R.id.third_correct);
+        fourthRadioButton = (RadioButton) findViewById(R.id.fourth_correct);
+        fifthRadioButton = (RadioButton) findViewById(R.id.fifth_correct);
+        sixthRadioButton = (RadioButton) findViewById(R.id.sixth_correct);
         fourthRadioGroup = (RadioGroup) findViewById(R.id.fourth_radio_group);
         fifthRadioGroup = (RadioGroup) findViewById(R.id.fifth_radio_group);
         sixthRadioGroup = (RadioGroup) findViewById(R.id.sixth_radio_group);
@@ -36,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox firstCheckBox;
     private CheckBox secondCheckBox;
     private CheckBox thirdCheckBox;
+    private RadioButton firstRadioButton;
+    private RadioButton secondRadioButton;
+    private RadioButton thirdRadioButton;
+    private RadioButton fourthRadioButton;
+    private RadioButton fifthRadioButton;
+    private RadioButton sixthRadioButton;
 
     /**
      * Reset all answers
@@ -54,17 +66,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Call resetData method when RESET button is pressed
-     *
-     * @param view
+     * Call the method when RESET button is pressed
      */
     public void resetButton(View view) {
         resetData();
     }
 
-    public void showGoodAnswers(View view) {
+    public void showGoodAnswers (View view) {
         resetData();
-
+        firstRadioButton.setChecked(true);
+        secondRadioButton.setChecked(true);
+        thirdRadioButton.setChecked(true);
+        fourthRadioButton.setChecked(true);
+        fifthRadioButton.setChecked(true);
+        sixthRadioButton.setChecked(true);
+        firstCheckBox.setChecked(true);
+        thirdCheckBox.setChecked(true);
     }
 }
 

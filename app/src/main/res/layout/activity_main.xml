@@ -71,6 +71,7 @@
                             android:text="@string/first_answer" />
 
                         <RadioButton
+                            android:id="@+id/first_correct"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -116,6 +117,7 @@
                         android:orientation="horizontal">
 
                         <RadioButton
+                            android:id="@+id/second_correct"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -179,6 +181,7 @@
                             android:text="@string/first_answer_tq" />
 
                         <RadioButton
+                            android:id="@+id/third_correct"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -233,6 +236,7 @@
                             android:text="@string/first_answer_fq" />
 
                         <RadioButton
+                            android:id="@+id/fourth_correct"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -278,6 +282,7 @@
                         android:orientation="horizontal">
 
                         <RadioButton
+                            android:id="@+id/fifth_correct"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -332,6 +337,7 @@
                         android:orientation="horizontal">
 
                         <RadioButton
+                            android:id="@+id/sixth_correct"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
