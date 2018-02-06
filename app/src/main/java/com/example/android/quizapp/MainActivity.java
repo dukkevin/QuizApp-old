@@ -10,7 +10,27 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * This is a quiz app with wich you can learn capitals of the world.
+ */
 public class MainActivity extends AppCompatActivity {
+
+    private RadioGroup firstRadioGroup;
+    private RadioGroup secondRadioGroup;
+    private RadioGroup thirdRadioGroup;
+    private RadioGroup fourthRadioGroup;
+    private RadioGroup fifthRadioGroup;
+    private RadioGroup sixthRadioGroup;
+    private CheckBox firstCheckBox;
+    private CheckBox secondCheckBox;
+    private CheckBox thirdCheckBox;
+    private RadioButton firstRadioButton;
+    private RadioButton secondRadioButton;
+    private RadioButton thirdRadioButton;
+    private RadioButton fourthRadioButton;
+    private RadioButton fifthRadioButton;
+    private RadioButton sixthRadioButton;
+    private EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
         editText = (EditText) findViewById(R.id. first_edit_text);
     }
 
+    /**
+     * This method is called when the RESULT button is clicked.
+     */
     public void displayResults (View view) {
         int point = 0;
 
@@ -83,26 +106,32 @@ public class MainActivity extends AppCompatActivity {
             point++;
         }
 
-        Toast.makeText(this, "You get " + point + " on 8", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "You got " + point + " on 8", Toast.LENGTH_LONG).show();
     }
 
-    private RadioGroup firstRadioGroup;
-    private RadioGroup secondRadioGroup;
-    private RadioGroup thirdRadioGroup;
-    private RadioGroup fourthRadioGroup;
-    private RadioGroup fifthRadioGroup;
-    private RadioGroup sixthRadioGroup;
-    private CheckBox firstCheckBox;
-    private CheckBox secondCheckBox;
-    private CheckBox thirdCheckBox;
-    private RadioButton firstRadioButton;
-    private RadioButton secondRadioButton;
-    private RadioButton thirdRadioButton;
-    private RadioButton fourthRadioButton;
-    private RadioButton fifthRadioButton;
-    private RadioButton sixthRadioButton;
-    private EditText editText;
 
+    /**
+     * This method is called when the ANSWERS button is clicked.
+     */
+    public void showGoodAnswers (View view) {
+        resetData();
+        firstRadioButton.setChecked(true);
+        secondRadioButton.setChecked(true);
+        thirdRadioButton.setChecked(true);
+        fourthRadioButton.setChecked(true);
+        fifthRadioButton.setChecked(true);
+        sixthRadioButton.setChecked(true);
+        firstCheckBox.setChecked(true);
+        thirdCheckBox.setChecked(true);
+        editText.setText("195");
+    }
+
+    /**
+     * This method is called when the RESET button is clicked.
+     */
+    public void resetButton(View view) {
+        resetData();
+    }
 
     /**
      * Reset all answers
@@ -120,26 +149,6 @@ public class MainActivity extends AppCompatActivity {
         thirdCheckBox.setChecked(false);
         editText.getText().clear();
 
-    }
-
-    /**
-     * Call the method when RESET button is pressed
-     */
-    public void resetButton(View view) {
-        resetData();
-    }
-
-    public void showGoodAnswers (View view) {
-        resetData();
-        firstRadioButton.setChecked(true);
-        secondRadioButton.setChecked(true);
-        thirdRadioButton.setChecked(true);
-        fourthRadioButton.setChecked(true);
-        fifthRadioButton.setChecked(true);
-        sixthRadioButton.setChecked(true);
-        firstCheckBox.setChecked(true);
-        thirdCheckBox.setChecked(true);
-        editText.setText("195");
     }
 }
 
