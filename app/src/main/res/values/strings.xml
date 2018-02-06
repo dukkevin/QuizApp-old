@@ -1,4 +1,5 @@
 <resources>
+
     <!-- Application Name -->
     <string name="app_name">Quiz App</string>
 
@@ -107,7 +108,7 @@
     <!-- Reset button -->
     <string name="reset">Reset</string>
 
-    <!-- Extra hint field -->
-    <string name="hint_extra">Type the number of total countries...</string>
+    <!-- Number Field -->
+    <string name="hint_extra">Type the number of total countries&#8230;</string>
 
 </resources>

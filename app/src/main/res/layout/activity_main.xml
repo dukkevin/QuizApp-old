@@ -444,8 +444,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_extra"
-                    android:textSize="15dp"
-                    android:inputType="number"/>
+                    android:inputType="number"
+                    android:textSize="15sp" />
 
             </LinearLayout>
 
@@ -457,15 +457,17 @@
                 android:layout_marginTop="50dp">
 
                 <Button
-                    android:onClick="displayResults"
+                    style="?android:attr/borderlessButtonStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="displayResults"
                     android:text="@string/result"
                     android:textSize="16sp" />
 
                 <Button
                     android:id="@+id/show_good_answers"
+                    style="?android:attr/borderlessButtonStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -478,6 +480,7 @@
 
                 <Button
                     android:id="@+id/reset"
+                    style="?android:attr/borderlessButtonStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -488,6 +491,7 @@
             </LinearLayout>
 
         </LinearLayout>
+
     </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
